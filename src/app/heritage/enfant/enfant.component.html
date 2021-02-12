@@ -1,0 +1,11 @@
+
+
+<div *ngFor="let user of tableau">
+    <div *ngIf="user.name">
+        {{user.name}}
+    </div>
+    <div *ngIf="!user.name">
+        {{user}}
+    </div>
+</div>
+<button (click)="add()"> Créer</button>

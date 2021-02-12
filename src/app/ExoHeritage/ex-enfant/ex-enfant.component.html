@@ -1,0 +1,19 @@
+
+<form (ngSubmit) = "soumettre()" [formGroup] ="userProfilForm">
+    <label> nom :
+        <input type="text" 
+        formControlName="nom" placeholder="Nom">
+    </label>
+
+    <label> prenom :
+        <input type="text" 
+        formControlName ="prenom" placeholder="Prenom">
+    </label>
+
+    <label> age :
+        <input type="text" 
+        formControlName="age" placeholder="Age">
+    </label>
+
+    &nbsp; <button type="submit" class="btn btn-info"> validation </button>
+</form>
